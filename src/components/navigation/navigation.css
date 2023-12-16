@@ -1,0 +1,70 @@
+/* src/components/Navigation.css */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Ensure the image itself is rounded */
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-list.open {
+    flex-direction: column;
+
+    position: absolute;
+    top:60px;
+    /* Adjust as needed */
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  
+  .nav-list li {
+
+    margin-right: 20px;
+  }
+  
+  .mobile-menu-button {
+    display: none; /* Initially hide the hamburger menu icon on larger screens */
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none; /* Hide the nav list on smaller screens */
+    }
+    .nav-list li 
+    {
+        margin:17px;
+      }
+    .mobile-menu-button {
+      display: block; /* Show the hamburger menu icon on smaller screens */
+      padding-right: 1rem;
+    }
+  }
+  

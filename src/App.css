@@ -1,0 +1,13 @@
+main{
+  padding-top: 60px;
+   /* Replace with the actual path to your background image */
+
+}
+.app{
+  background: url('./assets/logo.png') center/cover no-repeat;
+  
+}
+.mask{
+  background: rgba(203, 211, 203, 0.9); /* Adjust the alpha (fourth) value for the opacity of the overlay */
+
+}

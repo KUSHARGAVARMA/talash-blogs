@@ -1,0 +1,12 @@
+/* src/components/Post.css */
+.post {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    position: relative;
+    @media (min-width: 768px) {
+      width: 50%;
+      margin: 1rem auto;
+    }
+  }
+  

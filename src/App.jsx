@@ -10,7 +10,7 @@ const App = () => {
   const posts = [
     {
       title: 'First Post',
-      content: 'This is my first blog post.',
+      content: 'This is my first blog.',
     },
     {
       title: 'Second Post',
